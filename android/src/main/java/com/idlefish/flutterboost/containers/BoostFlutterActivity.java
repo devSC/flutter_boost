@@ -1,6 +1,7 @@
 package com.idlefish.flutterboost.containers;
 
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -191,6 +192,7 @@ public class BoostFlutterActivity extends AppCompatActivity
      */
     @Nullable
     @SuppressWarnings("deprecation")
+    @SuppressLint("WrongConstant")
     private Drawable getSplashScreenFromManifest() {
         try {
             ActivityInfo activityInfo = getPackageManager().getActivityInfo(
