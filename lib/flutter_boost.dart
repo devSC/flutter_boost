@@ -93,16 +93,16 @@ class FlutterBoost {
       {TransitionBuilder builder,
       PrePushRoute prePush,
       PostPushRoute postPush}) {
-    if (Platform.isAndroid) {
+    // if (Platform.isAndroid) {
       onPageStart();
-    } else if (Platform.isIOS) {
-      assert(() {
-        () async {
-          onPageStart();
-        }();
-        return true;
-      }());
-    }
+    // } else if (Platform.isIOS) {
+    //   assert(() {
+    //     () async {
+    //       onPageStart();
+    //     }();
+    //     return true;
+    //   }());
+    // }
 
     return (BuildContext context, Widget child) {
       assert(child is Navigator, 'child must be Navigator, what is wrong?');
